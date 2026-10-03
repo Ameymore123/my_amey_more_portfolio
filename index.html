@@ -1,501 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-
-  <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Bootstrap Icons -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="static/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Amey More – Web developer</title>
+  <meta name="description"
+    content="Amey More is a web developer and mechanical engineering student in Pune who builds full-stack apps with Django and React.">
+  <meta name="theme-color" content="#001524">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css">
 </head>
+
 <body>
+  <svg class="gear" viewBox="-200 -200 400 400" aria-hidden="true">
+    <circle r="160" class="teeth" />
+    <circle r="140" />
+    <circle r="60" />
+    <circle r="8" />
+    <path d="M0-140V-60M121-70 52-30M121 70 52 30M0 140V60M-121 70-52 30M-121-70-52-30" />
+  </svg>
 
-  <header>
-    <nav class="navbar">
-      <div class="logo">Amey<span style="color: #ff6666;">.</span></div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skillsid">Skills</a></li>
-        <li><a href="#projectsid">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#footer__top" class="cta-btn"><b style="color: white;">Let's Talk →</b></a></li>
-
-      </ul>
+  <header class="bar">
+    <a href="#home" class="logo">Amey<i>.</i></a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false"
+      aria-controls="menu"><span></span><span></span></button>
+    <nav id="menu">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a
+        href="#education">Education</a>
+      <a href="#contact" class="pill">Let's talk</a>
     </nav>
   </header>
 
-  <div class="container" id="home">
-    <div class="text-container">
-      <h1>My Self, </h1>
-      <span>Amey More</span>
-      <p style="text-align: left; width: 300px;">I'm a Web Developer specialised in frontend and backend development for complex scalable web apps. Want to know how I may help your project? Check out my project portfolio and online resume.</p>
-      <a href="static/Amey_More_CV.pdf" class="btn">Download CV</a>
-
-
-    </div>
-    <div class="image-container">
-      <img src="static/Amey more image.jpeg" alt="Profile Picture">
-      <div class="text-highlight">I am a <br><span>Developer</span></div>
-    </div>
-    <div class="bg-text">PROFESSIONAL RESUME</div>
-  </div>
-
-  <div class="settings-icon">⚙</div>
-
-  <section class="about" id="about">
-  <div class="about-container">
-    <div class="about-left">
-      <h2 class="section-title-about">About Me</h2>
-      <h1>Professional Web Developer</h1>
-      <p class="about-desc">
-        Passionate developer with a strong background in building intuitive and scalable web applications. Blending creativity with technology to create meaningful digital experiences.
-      </p>
-
-      <div class="about-grid">
-        <div class="about-info">
-          <p><strong>Name:</strong> Amey More</p>
-          <p><strong>Nationality:</strong> Indian</p>
-          <p><strong>Phone:</strong> +91 8149464262</p>
-          <p><strong>Email:</strong> ameym4745@gmail.com</p>
-          <p><strong>Experience:</strong> 5+ Years</p>
-          <p><strong>Freelance:</strong> Available</p>
-          <p><strong>Skype:</strong> ariaalex15</p>
-          <p><strong>Language:</strong> English</p>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="kicker">Web developer in Pune</p>
+        <h1 aria-label="Amey More"><span class="w" data-split>Amey</span> <span class="w" data-split>More</span></h1>
+        <p class="lede">I build full-stack web apps with Django and React, and I bring a mechanical engineer's habit of
+          measuring twice to every project.</p>
+        <div class="cta">
+          <a class="btn solid" href="static/Amey_More_CV.pdf" download>Download CV</a>
+          <a class="btn" href="#projects">See my work</a>
         </div>
+      </div>
+      <figure class="frame">
+        <img src="static/Amey%20more%20image.jpeg" alt="Portrait of Amey More">
+        <svg class="dim dim-h" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 5H100M0 0V10M100 0V10" />
+        </svg>
+        <svg class="dim dim-v" viewBox="0 0 10 100" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M5 0V100M0 0H10M0 100H10" />
+        </svg>
+        <figcaption><b>Sheet 01</b><span>Amey More, 5+ years coding</span></figcaption>
+      </figure>
+    </section>
 
-        <div class="about-stats">
-          <div class="stat-box">
-            <h3>5+</h3>
-            <p>Years</p>
-          </div>
-
-            <div class="stat-box">
-              <h3>72+</h3>
-              <p>Projects</p>
+    <section id="about" class="sec">
+      <h2 class="sec-title">About</h2>
+      <div class="about">
+        <div>
+          <p class="big">Self-taught since my teens, now studying mechanical engineering. I like building things that
+            work reliably and look considered, whether that's a Django backend or a 3D-printed part.</p>
+          <dl class="spec">
+            <div>
+              <dt>Name</dt>
+              <dd>Amey More</dd>
             </div>
-            
-          
-            <div class="stat-box">
-              <h3>514+</h3>
-              <p>Reviewers</p>
+            <div>
+              <dt>Based in</dt>
+              <dd>Pune, India</dd>
             </div>
-          
-
-
-        </div>
-      </div>
-    </div>
-
-    <div class="about-right" data-aos="fade-left" data-aos-delay="500" id="myabout">
-      <div class="about-image-wrapper tilt-effect" style="background-color: transparent;">
-        <div class="about-image">
-          <img src="static/amey more closeup.jpeg" alt="profile" class="about-img" />
-        </div>
-        <div class="hire-btn">↗<br />Hire Me</div>
-        <div class="experience-tag">5+ Years Experience</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- Skills Section -->
-
-  <div class="skills-container" id="skillsid">
-    <h1 class="skills-heading">My <mark style="color: white; background-color: #000; padding-left: 10px; padding-right: 10px; border-radius: 5px;">Skills</mark></h1>
-    <p class="skills-subheading">Technologies and tools I'm confident working with:</p>
-  
-    <div class="skills-grid">
-      <!-- Python -->
-      <div class="flip-card">
-        <img src="static/python.png" alt="Python">
-        <div class="flip-card-back">
-          <h2 style="color: #1da1f2;">Python</h2>
-          <p class="skill-desc">3+ years in scripting, automation & Django.</p>
-          <ul class="highlights">
-            <li>Web scraping</li>
-            <li>Django APIs</li>
-            <li>Pandas</li>
-          </ul>
-          <div class="skill-level">
-            <div class="skill-bar">
-              <div class="skill-fill python"></div>
+            <div>
+              <dt>Experience</dt>
+              <dd>5+ years</dd>
             </div>
-            <p>Proficiency: 90%</p>
-          </div>
-        </div>
-      </div>
-  
-      <!-- JavaScript -->
-      <div class="flip-card">
-        <img src="static/js.png" alt="JavaScript">
-        <div class="flip-card-back">
-          <h2 style="color: #f7df1e;">JavaScript</h2>
-          <p class="skill-desc">Creating interactive frontend UI with ES6+.</p>
-          <ul class="highlights">
-            <li>DOM Manipulation</li>
-            <li>Fetch API</li>
-            <li>Event Handling</li>
-          </ul>
-          <div class="skill-level">
-            <div class="skill-bar">
-              <div class="skill-fill js"></div>
+            <div>
+              <dt>Freelance</dt>
+              <dd>Available</dd>
             </div>
-            <p>Proficiency: 80%</p>
-          </div>
-        </div>
-      </div>
-  
-      <!-- React -->
-      <div class="flip-card">
-        <img src="static/newr.png" alt="React">
-        <div class="flip-card-back">
-          <h2 style="color: #61dafb;">React</h2>
-          <p class="skill-desc">Built single-page apps with React and hooks.</p>
-          <ul class="highlights">
-            <li>Components</li>
-            <li>React Router</li>
-            <li>State Props</li>
-          </ul>
-          <div class="skill-level">
-            <div class="skill-bar">
-              <div class="skill-fill react"></div>
+            <div>
+              <dt>Language</dt>
+              <dd>English</dd>
             </div>
-            <p>Proficiency: 85%</p>
-          </div>
-        </div>
-      </div>
-  
-      <!-- C++ -->
-      <div class="flip-card">
-        <img src="static/cpp.png" alt="C++">
-        <div class="flip-card-back">
-          <h2 style="color: #00599c;">C++</h2>
-          <p class="skill-desc">Strong DSA & competitive coding background.</p>
-          <ul class="highlights">
-            <li>OOP Concepts</li>
-            <li>STL</li>
-            <li>DSA</li>
-          </ul>
-          <div class="skill-level">
-            <div class="skill-bar">
-              <div class="skill-fill cpp"></div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:ameym4745@gmail.com">ameym4745@gmail.com</a></dd>
             </div>
-            <p>Proficiency: 75%</p>
-          </div>
+          </dl>
         </div>
+        <ul class="stats">
+          <li><b data-count="5">0</b><span>years building</span></li>
+          <li><b data-count="72">0</b><span>projects</span></li>
+          <li><b data-count="514">0</b><span>reviewers</span></li>
+        </ul>
       </div>
-    </div>
-  </div>
+    </section>
 
+    <section id="skills" class="sec">
+      <h2 class="sec-title">Skills</h2>
+      <ul class="skills">
+        <li data-level="90">
+          <h3>Python</h3>
+          <p>Scripting, automation, Django APIs, Pandas, web scraping</p>
+          <div class="gauge"><i></i></div><em>90%</em>
+        </li>
+        <li data-level="85">
+          <h3>React</h3>
+          <p>Single-page apps, hooks, components, React Router</p>
+          <div class="gauge"><i></i></div><em>85%</em>
+        </li>
+        <li data-level="80">
+          <h3>JavaScript</h3>
+          <p>ES6+, DOM, Fetch API, event handling</p>
+          <div class="gauge"><i></i></div><em>80%</em>
+        </li>
+        <li data-level="75">
+          <h3>C++</h3>
+          <p>OOP, STL, data structures and algorithms</p>
+          <div class="gauge"><i></i></div><em>75%</em>
+        </li>
+      </ul>
+    </section>
 
-
-
-
-
-
-  <div class="projects-container" id="projectsid">
-    <h1 class="projects-heading">My <mark style="color: white; background-color: #000; padding-bottom: 2px; padding-left: 10px; padding-right: 10px; border-radius: 5px;">Projects</mark></h1>
-    <p class="projects-subheading">Some cool things I've built recently:</p>
-  
-    <div class="projects-grid">
-  
-      <!-- Project 1 -->
-      <div class="project-card">
-        <img src="static/prototype ss.png" alt="BlueprintAI">
-        <div class="project-content">
-          <h3 class="project-title">BlueprintAI</h3>
-          <p class="project-tech">Django • API • Bing Crawler</p>
-          <p class="project-description">
-            A project report generator for engineering students that auto-generates reports dox file with images.
-          </p>
-          <div class="project-links">
-            
-            <!--
-            <a href="https://blueprintai.site" target="_blank" style="display: none;">Live</a>
-            <a href="https://github.com/yourusername/blueprintai" target="_blank" style="display: none;">Code</a>
-         -->
-          
-          </div>
-        </div>
-      </div>
-  
-      <!-- Project 2 -->
-      <div class="project-card">
-        <img src="static/rpf ss.png" alt="Interactive Resume">
-        <div class="project-content">
-          <h3 class="project-title">Live Interactive Resume</h3>
-          <p class="project-tech">HTML • Tailwind CSS</p>
-          <p class="project-description">
-            A dynamic resume portfolio with smooth navigation, animations, and modular sections.
-          </p>
-          <div class="project-links">
-            
-            <!--
-            <a href="#" target="_blank" style="display: none;">Live</a>
-            <a href="https://github.com/yourusername/interactive-resume" target="_blank" style="display: none;">Code</a>
-          -->
-          
-          </div>
-        </div>
-      </div>
-  
-      <!-- Project 3 -->
-      <div class="project-card">
-        <img style="object-fit: contain; background-color: #000;" src="static/logo.jpg" alt="Rent Manager">
-        <div class="project-content">
-          <h3 class="project-title">LookNet</h3>
-          <p class="project-tech">Django • SQLite • Bootstrap</p>
-          <p class="project-description">
-            A social networking site where you can post, like, live chat and follow other user.
-          </p>
-          <div class="project-links">
-            
-            <!--
-            <a href="#" target="_blank" style="display: none;">Live</a>
-            <a href="https://github.com/yourusername/rent-manager" target="_blank" style="display: none;">Code</a>
-          -->
-          
-          </div>
-        </div>
-      </div>
-  
-    </div>
-  </div>
-
-
-
-
-
-<section id="education" class="timeline-section">
-  <div class="timeline-title-container">
-    <h2 class="section-title">My <mark style="color: white; background-color: #000; padding-bottom: 2px; padding-left: 10px; padding-right: 10px; border-radius: 5px;">Education</mark></h2>
-  </div>
-
-  <div class="timeline">
-
-    <!-- Education Card 1 -->
-    <div class="timeline-item">
-      <!-- <div class="timeline-year">2018-2024</div> -->
-      <div class="screen"><p class="anim-1"><mark style="color: dodgerblue; background-color: transparent; font-family: 'Courier New', monospace;">System</mark>.<mark style="color: dodgerblue; background-color: transparent; font-family: 'Courier New', monospace;">out</mark>.<mark style="color: rgb(30, 38, 255); background-color: transparent; font-family: 'Courier New', monospace;">println</mark>(<mark style="color: rgb(255, 113, 30); background-color: transparent; font-family: 'Courier New', monospace;">"Loading..."</mark>)</p></div>
-      <div class="timeline-content-1">
-        <div class="timeline-inner">
-          <div class="timeline-front">
-            <h3 class="timeline-title">Self-Taught Software & Web Development</h3>
-            <span class="timeline-duration">Independent Learning — Since Teenage</span>
-            <p>
-              Learned front-end and back-end development through hands-on projects and online platforms. Built full-stack applications using Django, React, and explored basic DevOps. Projects include a report generator (blueprintai.site), a Django-based rent management system, and a social networking site. Proficient in HTML, CSS, JavaScript, Python, C++, and GitHub workflows.
-            </p>
-          </div>
-          <div class="timeline-back">
-            <h4>Skills & Projects</h4>
-            <ul>
-              <li>Python, JavaScript, C++</li>
-              <li>Django, React, GitHub</li>
-              <li>Projects: blueprintai.site, Social Networking Site, Live Interactive Resume Portal</li>
+    <section id="projects" class="sec">
+      <h2 class="sec-title">Projects</h2>
+      <div class="stack">
+        <article class="card">
+          <img src="static/prototype%20ss.png" alt="BlueprintAI screenshot" loading="lazy">
+          <div>
+            <h3>BlueprintAI</h3>
+            <p>A report generator for engineering students. It writes the report and exports a .docx with images
+              included.</p>
+            <ul class="tags">
+              <li>Django</li>
+              <li>API</li>
+              <li>Bing crawler</li>
             </ul>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Education Card 2 -->
-    <div class="timeline-item">
-      <!-- <div class="timeline-year">2024-2027</div> -->
-      <img class="anim-2" src="static/mygear.png" alt="">
-      <img class="anim-3" src="static/mygear.png" alt="">
-      <div class="timeline-content-2" style="height: 400px;">
-        <div class="timeline-inner">
-          <div class="timeline-front">
-            <h3 class="timeline-title">B.Tech in Mechanical Engineering</h3>
-            <span class="timeline-duration">MIT Academy of Engineering (MITAOE), Pune — 2021–Present</span>
-            <p>
-              Core subjects: Thermodynamics, Design of Machine Elements, Manufacturing Processes. Developed strong analytical and problem-solving skills. Participated in tech fests and academic projects like 3D printing of mechanical components. Applied mechanical principles in building real-world solutions.
-            </p>
-          </div>
-          <div class="timeline-back">
-            <h4>Highlights</h4>
-            <ul>
-              <li>Thermodynamics</li>
-              <li>Design of Machine Elements</li>
-              <li>Capstone Projects</li>
+        </article>
+        <article class="card">
+          <img src="static/rpf%20ss.png" alt="Live Interactive Resume screenshot" loading="lazy">
+          <div>
+            <h3>Live Interactive Resume</h3>
+            <p>A resume portfolio with smooth navigation, animations and modular sections.</p>
+            <ul class="tags">
+              <li>HTML</li>
+              <li>Tailwind CSS</li>
             </ul>
           </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-<section class="meeting-section" id="contact-footer">
-  <div class="meeting-container">
-    <div class="meeting-left animate-slide-in">
-      <p class="meeting-subtitle animate-fade-in">Need a Project?</p>
-      <h1 class="meeting-title animate-fade-in">Let's Work Together.<br>Fix a Meeting</h1>
-
-      <div class="meeting-info">
-        <div class="info-item card-flip">
-          <div class="icon-circle front">
-            <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="email" />
-          </div>
-          <div class="info-flip back">
-            <!-- <p class="info-label">Email</p> -->
-            <p class="info-value">ameym4745@gmail.com</p>
-          </div>
-        </div>
-
-        <div class="info-item card-flip">
-          <div class="icon-circle front">
-            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="location" />
-          </div>
-          <div class="info-flip back">
-            <!-- <p class="info-label">Location</p> -->
-            <p class="info-value">Pune PCMC Maharashtra, India</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="meeting-right animate-zoom-in">
-      <img src="static/work.jpg" alt="Cartoon Girl" class="meeting-img float-img" />
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-<div class="mycontainer" style="background-color: #001524;">
-  <div class="container" style="background-color: #001524;">
-    <div class="footer__top" id="footer__top">
-      <div class="row g-4 justify-content-between">
-        
-        <!-- Left Section: Logo and Description -->
-        <div class="col-lg-4 col-md-6">
-          <div class="footer-widget">
-            <a href="#" class="flogo">Amey</a>
-            <p class="iam">
-              Hello, I’m Amey, Web Developer & Programmer <br>
-              Coder based in India.
-            </p>
-          </div>
-        </div>
-  
-        <!-- Quick Links -->
-        <div class="col-lg-2 col-md-6">
-          <div class="footer-widget">
-            <h4 class="fhead-title">Quick Link</h4>
-            <ul class="quick-link">
-              <li><a href="https://www.linkedin.com/in/amey-more-a44a79352" target="_blank">LinkedIn</a></li>
-              <li><a href="#">Project</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Faqs</a></li>
-              <li><a href="#">Contact</a></li>
+        </article>
+        <article class="card">
+          <img class="contain" src="static/logo.jpg" alt="LookNet logo" loading="lazy">
+          <div>
+            <h3>LookNet</h3>
+            <p>A social network where you can post, like, follow people and chat live.</p>
+            <ul class="tags">
+              <li>Django</li>
+              <li>SQLite</li>
+              <li>Bootstrap</li>
             </ul>
           </div>
-        </div>
-  
-        <!-- Address -->
-        <div class="col-lg-3 col-md-6">
-          <div class="footer-widget">
-            <h4 class="fhead-title">Address</h4>
-            <ul class="address-link">
-              <li class="d-flex align-items-start gap-3">
-                <div class="icons"><i class="bi bi-geo-alt"></i></div>
-                <div class="cont">Pune Moshi PCMC Moshi Road</div>
-              </li>
-              <li class="d-flex align-items-start gap-3">
-                <div class="icons"><i class="bi bi-chat-left-dots"></i></div>
-                <div class="box">
-                  <div class="cont">ameym4745@gmail.com</div>
-                  
-                </div>
-              </li>
-              <li class="d-flex align-items-start gap-3">
-                <div class="icons"><i class="bi bi-telephone"></i></div>
-                <div class="box">
-                  <div class="cont">+91 8149464262</div>
-                  <div class="cont"></div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-  
-        <!-- Contact Form -->
-
-        <!--
-        <div class="col-lg-3 col-md-6">
-          <div class="footer-widget">
-            <form method="POST" class="contact-wrap">
-              <input type="text" name="name" placeholder="Name" required>
-              <input type="email" name="email" placeholder="Email" required>
-              <input type="text" name="subject" placeholder="Subject" required>
-              <textarea name="message" rows="4" placeholder="Message" required></textarea>
-              <input type="submit" value="Send Message" class="cmn--btn">
-            </form>
-          </div>
-        </div> -->
+        </article>
       </div>
-  
-      <!-- Bottom Copyright -->
-      <div class="footer-bottom">
-        Copyright © 2025 <span style="color: #ff6666;">Amey.</span> All rights reserved.
-      </div>
-    </div>
-  </div>
-</div>
+    </section>
 
+    <section id="education" class="sec">
+      <h2 class="sec-title">Education</h2>
+      <ol class="timeline">
+        <li>
+          <time>Since my teens</time>
+          <h3>Self-taught software and web development</h3>
+          <p>Learned front-end and back-end through hands-on projects: a report generator, a Django rent manager and a
+            social network. Comfortable with HTML, CSS, JavaScript, Python, C++ and GitHub workflows.</p>
+        </li>
+        <li>
+          <time>2021 to present</time>
+          <h3>B.Tech, Mechanical Engineering</h3>
+          <p>MIT Academy of Engineering, Pune. Thermodynamics, machine design and manufacturing, plus 3D printing of
+            mechanical components and capstone projects.</p>
+        </li>
+      </ol>
+    </section>
 
+    <section id="contact" class="sec contact">
+      <p class="kicker">Have a project in mind?</p>
+      <a class="mail" href="mailto:ameym4745@gmail.com">ameym4745<wbr>@gmail.com</a>
+      <ul class="reach">
+        <li>Pune (PCMC), Maharashtra</li>
+        <li><a href="tel:+918149464262">+91 8149464262</a></li>
+        <li><a href="https://www.linkedin.com/in/amey-more-a44a79352" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
 
-
-
-
-
-<!-- FLOOK PLAYER -->
-
-<script defer src="https://cdn.flook.co/p/2b6c22b4-32ce-491e-a9c4-38b2d14764c9.js" data-flook-id="2b6c22b4-32ce-491e-a9c4-38b2d14764c9"></script>
-
-<!-- END FLOOK PLAYER -->
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-  
-
-<script src="static/script.js"></script>
-
+  <footer class="foot">© 2025 Amey<i>.</i> All rights reserved.</footer>
+  <script src="static/script.js"></script>
 </body>
+
 </html>
